@@ -78,6 +78,8 @@ const Feed = () => {
 					className="search_input peer"
 				/>
 			</form>
+
+			{/* Show all posts when there's no searchText input */}
 			{searchText ? (
 				<PromptCardList data={searchResults} handleTagClick={handleTagClick} />
 			) : (
